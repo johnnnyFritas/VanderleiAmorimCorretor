@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@200&family=Poppins&display=swap');
+
+:root {
+    --fonte-principal: 'Inter', sans-serif;
+    --fonte-secundaria: 'Poppins', sans-serif;
+    --fonte-terciaria: 'Montserrat', sans-serif;
+    --fonte-quaternaria: 'Helvetica Neue', sans-serif;
+
+    --cor-principal: white;
+    --cor-secundaria: #EAD7BB;
+    --cor-terciaria: #AE445A;
+    --cor-quaternaria: #BCA37F;
+    --cor-quinaria: #113946;
+}
+
+.titulo-escolhe-apartamento {
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: var(--fonte-quaternaria);
+
+    padding: 5rem 0 0 0;
+
+    display: flex;
+    justify-content: center;
+}
+
+.mostra-apartamentos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 5rem 0;
+}
+
+.apartamentos-morada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    height: 25rem;
+
+    padding: 2.8rem 2rem;
+    text-decoration: none;
+
+    background-color: #9e9e9e;
+    border-radius: 2rem;
+
+    transition: 0.5s;
+}
+
+.apartamentos-morada:hover {
+    border: 2px solid var(--cor-terciaria);
+
+    padding: 2.8rem 1rem;
+
+    transition: 0.5s;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    padding: 2rem 15rem;
+}
+
+.conteudo-imagem {
+    width: 90%;
+
+    border-radius: 1rem;
+}
+
+.conteudo-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.conteudo-texto-titulo {
+    font-size: 2rem;
+    font-family: var(--fonte-quaternaria);
+
+    color: var(--cor-quinaria);
+}
+
+.conteudo-texto-subtitulo {
+    font-size: 1.5rem;
+    font-family: var(--fonte-terciaria);
+
+    color: var(--cor-principal);
+}
+
+.detalhes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.detalhes-conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 0.5rem;
+
+    background-color: #686868;
+
+    padding: 1rem 1.2rem;
+
+    border-radius: 4rem;
+}
+
+.conteudo-texto-legenda {
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: var(--fonte-terciaria);
+    color: white;
+}
+
+.apresenta-fotos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+
+    background-color: rgb(190, 190, 190);
+
+    padding: 5rem 0;
+}
+
+.apresenta-fotos > img {
+    width: 40%;
+
+    border-radius: 2rem;
+}
+
+.divide-fotos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.divide-fotos > img {
+    width: 20%;
+
+    border-radius: 1rem;
+
+    cursor: pointer;
+
+    transition: 1s;
+}
+
+.divide-fotos > img:hover {
+    width: 22%;
+
+    transition: 1s;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .titulo-escolhe-apartamento {
+        font-size: 1.6rem;
+    }
+ 
+    .apartamentos-morada {
+        padding: 1rem 1rem;
+    }
+
+    .apartamentos-morada > img {
+        width: 80%;
+    }
+    
+    .mostra-apartamentos {
+        display: flex;
+        flex-direction: column;
+        gap: 20rem;
+    }
+
+    .conteudo {
+        padding: 0;
+    }
+
+    .apresenta-fotos {
+        gap: 2rem;
+    }
+
+    .apresenta-fotos > img {
+        width: 80%;
+    }
+
+    .divide-fotos {
+        gap: 1rem;
+    }
+
+    .divide-fotos > img {
+        width: 20%;
+    }
+}

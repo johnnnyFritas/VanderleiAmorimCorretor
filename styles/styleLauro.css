@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@200&family=Poppins&display=swap');
+
+:root {
+    --fonte-principal: 'Inter', sans-serif;
+    --fonte-secundaria: 'Poppins', sans-serif;
+    --fonte-terciaria: 'Montserrat', sans-serif;
+    --fonte-quaternaria: 'Helvetica Neue', sans-serif;
+
+    --cor-principal: white;
+    --cor-secundaria: #EAD7BB;
+    --cor-terciaria: #AE445A;
+    --cor-quaternaria: #BCA37F;
+    --cor-quinaria: #113946;
+}
+
+.manutencao {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    padding: 20rem;
+}
+
+.manutencao-volta-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.titulo-lauro {
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: var(--fonte-quaternaria);
+}
+
+@media only screen and (max-width: 1024px) {
+    .manutencao {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        padding: 0;
+
+        width:  auto;
+    }
+
+    .manutencao-volta-home > h1 {
+        text-align: center;
+    }
+}
