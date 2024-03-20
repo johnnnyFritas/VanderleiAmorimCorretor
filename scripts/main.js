@@ -2,10 +2,11 @@ const formulario = document.querySelector("form");
 const pegaButao = document.querySelector(".button-submit");
 
 const chamaImagem =()=>{
-    pegaButao.innerHTML = '<img src="../assets/Icons/icons8-a-carregar-48.png" class=".button-submit > img">';
+    pegaButao.innerHTML = '<img src="../assets/Icons/icons8-loading-48.png" class=".button-submit > img">';
 };
 
 const removeImagem =()=> {
+    alert('Mensagem enviada!');
     pegaButao.innerHTML = 'Enviar';
 }
 

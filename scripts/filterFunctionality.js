@@ -11,6 +11,7 @@ const nf = document.getElementById('nf');
 
 //Filter function (here we called the functions to make the filter usable)
 botao.addEventListener('click', ()=> {
+    console.log(verifier);
     if(regiao.value === 'salvador' && finalidade.value === 'comprar' && tipo.value === 'apartamento') {
         mostraPiata();
         mostraMar();

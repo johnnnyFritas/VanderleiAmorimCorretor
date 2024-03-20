@@ -1,7 +1,6 @@
 //local variables
 const generalDiv = document.querySelectorAll('.header__opções__casas');
 const filterParagraph = document.querySelectorAll('#filter-text-animation');
-let i = 0;
 
 //A forEach to select all elements that will appear when you use the filter, then will apply all functions for the animations
 generalDiv.forEach(e => {
@@ -25,13 +24,6 @@ generalDiv.forEach(e => {
         hideParagraphMar();
     }); 
 });
-
-//This will reset all the animations off when you hover the mouse over.
-if(window.location.href != 'https://www.vanderleiamorimcorretor.com.br') {
-    piata.classList.remove('background-animationPiata');
-    mar.classList.remove('background-animationMar');
-}
-
 
 //This will redirect whoever is clicking on any element of the filter's results (even the background).
 generalDiv.forEach(e => {

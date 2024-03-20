@@ -27,7 +27,7 @@
     <meta name="robots" content="index, follow">
     <meta property="og:title" content="Casas à Venda em Lauro de Freitas e Salvador">
     <meta property="og:description" content="Explore esta incrível oportunidade de comprar uma casa em Lauro de Freitas e Salvador.">
-    <meta property="og:image" content="../assets/Morada-Piata/Imagem-banner9.jpg">
+    <meta property="og:image" content="assets/Morada-Piata/moradaP-Neighborhood">
     <meta property="og:url" content="https://vanderleiamorimcorretor.com.br">
     <meta property="og:type" content="website">
     <meta name="copyright" content="₢ 2023 Vanderlei Amorim">
@@ -69,28 +69,28 @@
 <body>
     <!-- style header -->
     <header class="header">
-        <div class="header__opções">
+        <div class="header__options">
             <a href="index.html"><img src="assets/Outros-Assets/Logo Marca Dagua.png" alt="Logo Vanderlei Amorim Corretor de Imóveis"></a>
-            <a class="header__opções__contato" href="#form">Contato</a>
+            <a class="header__options__contact" href="#form">Contato</a>
             <!-- Style filter -->
-            <div class="header__opções__filtro">
-                <h2 class="header__opções__filtro-titulo">Filtro:</h2>
-                <div class="header__opções__filtro-div">
-                    <div class="header__opções__filtro-div-região">
+            <div class="header__options__filter">
+                <h2 class="header__options__filter-title">Filtro:</h2>
+                <div class="header__options__filter-div">
+                    <div class="header__options__filter-div-região">
                         <select name="regiao" id="regiao">
                             <option value="regiao">Região</option>
                             <option value="lauro">Lauro de Freitas</option>
                             <option value="salvador">Salvador</option>
                         </select>
                     </div>
-                    <div class="header__opções__filtro-div-finalidade">
+                    <div class="header__options__filter-div-finalidade">
                         <select name="finalidade" id="finalidade">
                             <option value="finalidade">Finalidade</option>
                             <option value="comprar">Comprar</option>
                             <option value="alugar">Alugar</option>
                         </select>
                     </div>
-                    <div class="header__opções__filtro-div-tipo">
+                    <div class="header__options__filter-div-tipo">
                         <select name="tipo" id="tipo">
                             <option value="tipo">Tipo</option>
                             <option value="apartamento">Apartamento</option>
@@ -98,7 +98,7 @@
                         </select>
                     </div>
                 </div>
-                <button id="botao" class="header__opções__filtro-procurar">Procurar</button>
+                <button id="botao" class="header__options__filter-search">Procurar</button>
             </div>
             <div class="header__opções__casas">
                 <div id="piata" class="header__opções__casas-opção">
@@ -115,7 +115,7 @@
             </div>
         </div>
         <!-- style filter's end -->
-        <img class="header__imagem" src="assets/Outros-Assets/BannerDeFundo (1900 x 500 px).png" alt="">
+        <img class="header__image" src="assets/Outros-Assets/BannerDeFundo (1900 x 500 px).png" alt="">
     </header>
     <!-- style header's end -->
     <!-- style Highlights -->
@@ -124,13 +124,16 @@
         <div class="destaque__apartamento">
             <h2 class="destaque__apartamento-titulo">Morada de Piatã</h2>
             <!-- main container slider -->
-            <div class="swiper">
+            <div id="first-swiper" class="swiper">
+                <div id="areaToClick" class="swiper-clicked-image">
+                    <img id="clickedFoto" src="" alt="">
+                </div>
                 <!-- wrapper -->
                 <div class="swiper-wrapper">
                 <!-- div area (to add more images just put more div with the same class 'swiper-slide')-->
-                    <div class="swiper-slide"><img src="assets/Morada-Piata/ComplexoP.jpg" alt="Visão globao do complexo onde está localizado o condominio Morada de Piatã"></div>
-                    <div class="swiper-slide"><img src="assets/Morada-Piata/Vista-da-rua-MoradaP.jpg" alt="Região, com os locais e pontos de referência, onde está localizado o Morada de Piatã"></div>
-                    <div class="swiper-slide"><img src="assets/Morada-Piata/Playground-PetPlace-MoradaP.jpg" alt="Playground e área pet do Morada de Piatã"></div>
+                    <div class="swiper-slide"><img id="foto0" src="assets/Morada-Piata/moradaP-Neighborhood.jpg" alt="Visão globao do complexo onde está localizado o condominio Morada de Piatã"></div>
+                    <div class="swiper-slide"><img id="foto1" src="assets/Morada-Piata/moradaP-StreetSight.jpg" alt="Região, com os locais e pontos de referência, onde está localizado o Morada de Piatã"></div>
+                    <div class="swiper-slide"><img id="foto2" src="assets/Morada-Piata/moradaP-PetplaceAndPlayground.jpg" alt="Playground e área pet do Morada de Piatã"></div>
                 </div>
                 <!-- swiper pagination -->
                 <div class="swiper-pagination"></div>
@@ -236,5 +239,6 @@
     <script src="scripts/main.js"></script>
     <script src="scripts/filterFunctionality.js"></script>
     <script src="scripts/filterAnimations.js"></script>
+    <script src="scripts/clickingImagesAnimations.js"></script>
 </body>
 </html>

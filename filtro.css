@@ -1,33 +1,46 @@
-.header__opções__filtro {
+.header__options__filter {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
 }
 
-.header__opções__filtro-titulo {
+.header__options__filter-title {
     text-transform: uppercase;
     color: var(--cor-quaternaria);
 }
 
-.header__opções__filtro-div {
+.header__options__filter-div {
     display: flex;
     gap: 2rem;
 }
 
-.header__opções__filtro-div-região,
-.header__opções__filtro-div-finalidade,
-.header__opções__filtro-div-tipo,
-.header__opções__filtro-div-bairro {
+.header__options__filter-div-região,
+.header__options__filter-div-finalidade,
+.header__options__filter-div-tipo {
     background: url(../assets/Icons/icons8-seta-para-baixo-24.png) no-repeat right;
     border: 1px solid var(--cor-quaternaria);
 }
 
 #regiao,
-#finalidade,
 #tipo,
 #bairro {
-    padding: .5rem 1.5rem;
+    padding: .5rem 0rem;
+    width: auto;
+    font-size: 20px;
+    font-family: var(--fonte-principal);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--cor-quaternaria);
+    background: transparent;
+    border: none;
+    -webkit-appearance: none;
+}
+
+#finalidade {
+    padding: .5rem 2rem;
+    width: auto;
     font-size: 20px;
     font-family: var(--fonte-principal);
     text-transform: uppercase;
@@ -38,7 +51,7 @@
     -webkit-appearance: none;
 }
 
-.header__opções__filtro-procurar {
+.header__options__filter-search {
     padding: .5rem 2rem;
     font-size: 20px;
     font-family: var(--fonte-principal);
@@ -53,7 +66,7 @@
     transition: 1s;
 }
 
-.header__opções__filtro-procurar:hover {
+.header__options__filter-search:hover {
     box-shadow: inset 200px 0 0 #7a6953;
     border: 1px solid #7a6953;
     color: var(--cor-principal);
@@ -66,7 +79,7 @@
     justify-content: center;
     width: 80%;
     gap: 2rem;
-    padding-bottom: 15rem;
+    padding-bottom: 19rem;
 }
 
 .header__opções__casas-opção {
@@ -95,16 +108,16 @@
     }
 }
 
-.header__opções__casas-opção-mar-visivel {
+.header__opções__casas-opção-piata-visivel {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 4rem;
-    padding: 3rem 0rem;
+    padding: 2rem 0rem;
     width: 50%;
     border: 1px solid #7a6953;
     border-radius: 10px;
-    background: url(assets/imagesToAnimate/vistaMar-Animations/vistaM-BackgroundStatic.png) no-repeat center;
+    background: url(assets/imagesToAnimate/moradaPiata-Animations/moradaPiata-BackgroundStatic.jpg) no-repeat center;
     transition: 1.4s;
     position: relative;
     cursor: pointer;
@@ -114,16 +127,16 @@
     animation-iteration-count: 1;
 }
 
-.header__opções__casas-opção-piata-visivel {
+.header__opções__casas-opção-mar-visivel {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 4rem;
-    padding: 3rem 0rem;
+    padding: 2rem 0rem;
     width: 50%;
     border: 1px solid #7a6953;
     border-radius: 10px;
-    background: url(assets/imagesToAnimate/moradaPiata-Animations/moradaPiata-BackgroundStatic.jpg) no-repeat center;
+    background: url(assets/imagesToAnimate/vistaMar-Animations/vistaM-BackgroundStatic.png) no-repeat center;
     transition: 1.4s;
     position: relative;
     cursor: pointer;
@@ -141,6 +154,7 @@
 
 .header__options__home-option-paragraph {
    color: transparent;
+   font-family: var(--fonte-terciaria);
    font-size: 24px;
    width: 90%;
 }
@@ -190,6 +204,7 @@
 .filterParagraphIn {
     font-size: 24px;
     color: var(--cor-principal);
+    font-family: var(--fonte-terciaria);
     width: 90%;
     text-transform: uppercase;
     transition: 1.4s;
@@ -256,6 +271,7 @@
 .filterParagraphOut {
     font-size: 24px;
     color: transparent;
+    font-family: var(--fonte-terciaria);
     text-transform: uppercase;
     width: 90%;
 
@@ -265,92 +281,109 @@
 }
 /* End of filter animations */
 
-/* Responsive design*/
-@media screen and (max-width: 1024px) {
-    .header__opções__filtro {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+/* adjustments for 1366px width screens or lower! */
+@media screen and (max-width: 1366px) {
+
+    .header__options__filter-title {
+        font-size: 26px;
     }
 
-    .header__opções__filtro-titulo {
-        font-size: 28px;
-        font-weight: 600;
-    }
-
-    .header__opções__filtro-div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .header__opções__filtro-div-região,
-    .header__opções__filtro-div-finalidade,
-    .header__opções__filtro-div-tipo,
-    .header__opções__filtro-div-bairro {
-        background: url(../assets/Icons/icons8-seta-para-baixo-24.png) no-repeat right;
-        border: 1px solid var(--cor-quinaria);
-    }
-
-    .header__opções__casas {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .header__opções__casas-opção-mar-visivel {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 3rem 0rem;
-        width: auto;
-        border: 1px solid #7a6953;
-        border-radius: 10px;
-        background: transparent;
-    }
-
-    .header__opções__casas-opção-piata-visivel {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 3rem 0rem;
-        width: auto;
-        border: 1px solid #7a6953;
-        border-radius: 10px;
-        background: transparent;
-    }
-
-    .header__opções__casas-opção-img {
-        width: 90%;
-    }
-
-    .header__opções__casas-opção-titulo {
-        font-size: 32px;
-        text-transform: uppercase;
-        color: var(--cor-quinaria);
-    }
-
-    .header__opções__casas-opção-paragrafo {
-        width: 90%;
-        font-size: 20px;
-        color: var(--cor-quaternaria);
-        font-weight: 400;
-        text-align: center;
-        padding: 2rem 0;
-        text-transform: uppercase;
-    }
-
-    #finalidade {
-        padding: .5rem 2rem;
-    }
-
+    #finalidade,
     #regiao,
     #tipo {
-        padding: .5rem;
-        text-align: center;
+        font-size: 18px;
     }
+
+    .header__options__filter-search {
+        font-size: 18px;    
+    }
+
+    @media screen and (max-width: 1024px) {
+        .header__opções__filtro {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     
-    .header__opções__casas-opção-img {
-        display: block;
+        .header__opções__filtro-titulo {
+            font-size: 28px;
+            font-weight: 600;
+        }
+    
+        .header__opções__filtro-div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .header__opções__filtro-div-região,
+        .header__opções__filtro-div-finalidade,
+        .header__opções__filtro-div-tipo,
+        .header__opções__filtro-div-bairro {
+            background: url(../assets/Icons/icons8-seta-para-baixo-24.png) no-repeat right;
+            border: 1px solid var(--cor-quinaria);
+        }
+    
+        .header__opções__casas {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .header__opções__casas-opção-mar-visivel {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 3rem 0rem;
+            width: auto;
+            border: 1px solid #7a6953;
+            border-radius: 10px;
+            background: transparent;
+        }
+    
+        .header__opções__casas-opção-piata-visivel {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 3rem 0rem;
+            width: auto;
+            border: 1px solid #7a6953;
+            border-radius: 10px;
+            background: transparent;
+        }
+    
+        .header__opções__casas-opção-img {
+            width: 90%;
+        }
+    
+        .header__opções__casas-opção-titulo {
+            font-size: 32px;
+            text-transform: uppercase;
+            color: var(--cor-quinaria);
+        }
+    
+        .header__opções__casas-opção-paragrafo {
+            width: 90%;
+            font-size: 20px;
+            color: var(--cor-quaternaria);
+            font-weight: 400;
+            text-align: center;
+            padding: 2rem 0;
+            text-transform: uppercase;
+        }
+    
+        #finalidade {
+            padding: .5rem 2rem;
+        }
+    
+        #regiao,
+        #tipo {
+            padding: .5rem;
+            text-align: center;
+        }
+        
+        .header__opções__casas-opção-img {
+            display: block;
+        }
     }
 }
