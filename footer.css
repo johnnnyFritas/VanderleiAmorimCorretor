@@ -1,0 +1,248 @@
+.footer {
+    display: flex;
+    justify-content: center;  
+    align-items: flex-start; 
+    gap: 16rem;
+    padding: 5rem 0;
+    background-color: rgb(214, 214, 214);
+}
+
+.footer__preencher {
+    text-decoration: none;
+    transition: 2s;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.form__titulo {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.form__preencher {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form__preencher-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+label {
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: left;
+    font-size: 28px;
+}
+
+.input__form {
+    padding: 1rem 0 1rem 1rem;
+    border-radius: 6rem;
+    border: 1px solid;
+}
+
+.button-submit {
+    padding: 1rem 5rem;
+    border-radius: 1rem;
+    color: var(--cor-principal);
+    background-color: black;
+    font-size: 16px;
+    font-family: var(--fonte-terciaria);
+    font-weight: 600;
+    cursor: pointer;
+    pointer-events: fill;
+}
+
+#nome {
+    text-align: left;
+    font-size: 16px;
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+}
+
+#nome::placeholder {
+    font-size: 1rem;
+}
+
+#email {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 600;   
+    font-family: var(--fonte-secundaria);
+}
+
+#email::placeholder {
+    font-size: 16px;
+}
+
+.input__form-mensagem {
+    padding: 1rem 2rem 7rem 1rem;
+    border-radius: 1rem;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 600; 
+    font-family: var(--fonte-secundaria);
+}
+
+#mensagem::placeholder {
+    font-size: 16px;
+    font-family: var(--cor-quaternaria);
+}
+
+.contatos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contatos__titulo {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.contatos__whatsapp {
+    display: flex;
+    align-items: center;
+}
+
+.contatos__whatsapp__texto, 
+.contatos__telefone__texto,
+.contatos__instagram__texto {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--cor-quinaria);
+    transition: 1.4s;
+}
+
+.contatos__whatsapp__texto:hover,
+.contatos__instagram__texto:hover {
+    color: var(--cor-terciaria);
+    border-bottom: 1px solid var(--cor-terciaria);
+    transition: 1.4s;
+}
+
+.contatos__instagram {
+    display: flex;
+    align-items: center;
+}
+
+.contatos__telefone {
+    display: flex;
+    align-items: center;
+}
+
+.footer__copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: rgb(214, 214, 214);
+    padding: 4rem 0 2rem 0;
+}
+
+.footer__copyright__texto {
+    font-size: 18px;
+    font-family: var(--fonte-principal);
+}
+
+@keyframes anima-loading {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow-x: hidden;
+        width: auto;
+        gap: 5rem;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        gap: 2rem;
+    }
+
+    .form__preencher-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        gap: 1rem;
+    }
+
+    .footer__copyright {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        background-color: rgb(214, 214, 214);
+        padding: 4rem 0 2rem 0;
+    }
+    
+    .footer__copyright__texto {
+        font-size: 18px;
+        font-family: var(--fonte-principal);
+        text-align: center;
+    }
+
+    .input__form {
+        width: 80%;
+    }
+
+    #nome,
+    #email,
+    #mensagem {
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .input__form::placeholder {
+        visibility: hidden;
+    }
+
+    .input__form-mensagem {
+        width: 80%;
+    }
+
+    .input__form-mensagem::placeholder {
+        visibility: hidden;
+    }
+
+    .contatos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+}

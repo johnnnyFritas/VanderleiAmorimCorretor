@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="../assets/Outros-Assets/Logomarca-Dagua.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Links of css sheets-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="apartamentos.css">
+    <link rel="stylesheet" href="destaques.css">
+    <link rel="stylesheet" href="filtro.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="moradaP.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NJ08MT4WPK"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+    
+            gtag('config', 'G-NJ08MT4WPK');
+    </script>
+    <meta name="description" content="Como corretor de imóveis experiente, estou aqui para ajudá-lo a encontrar a casa dos seus sonhos. Explore nossa ampla seleção de propriedades e comece sua jornada rumo ao lar perfeito agora mesmo!">
+    <meta name="keywords" content="corretor de imóveis, imóveis a venda, imóveis para aluguel, casas para comprar, apartamentos para venda, Imobiliária, Consultor Imobiliário, Bens imobiliários, Investimento Imobiliário, propriedades comerciais, Casas de Luxo, Aluguel de imóveis, Vendas de terrenos, Avaliação Imobiliária, Financiamento Imobiliário, consultoria em investimentos, Casa própria, Condomínios à venda, Mercado Imobiliário, Negociação de Propriedades">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Casas à Venda em Lauro de Freitas e Salvador">
+    <meta property="og:description" content="Explore esta incrível oportunidade de comprar uma casa em Lauro de Freitas e Salvador.">
+    <meta property="og:image" content="../assets/Morada-Piata/Imagem-banner9.jpg">
+    <meta property="og:url" content="https://vanderleiamorimcorretor.com.br">
+    <meta property="og:type" content="website">
+    <meta name="copyright" content="₢ 2023 Vanderlei Amorim">
+    <meta name="language" content="pt-br">
+    <meta http-equiv="Content-Language" content="pt-br">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "RealEstateAgent",
+            "name": "Vanderlei Amorim Corretor de Imoveis",
+            "description": "Descubra a sua próxima casa dos sonhos com Vanderlei Amorim. Oferecemos uma vasta seleção de imóveis à venda e para alugar, desde apartamentos acolhedores até luxuosas casas de campo. Nossos experientes corretores imobiliários estão aqui para ajudá-lo a encontrar a propriedade perfeita. Entre em contato conosco hoje mesmo!",
+            "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Avenida Luis Viana Filho - São Marcos",
+            "addressLocality": "Salvador",
+            "addressRegion": "Bahia",
+            "postalCode": "41730-101",
+            "addressCountry": "Brasíl"
+            },
+            "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "-12.93716785753683",
+            "longitude": " -38.405006207887084"
+            },
+            "telephone": "+557192516350",
+            "url": "https://vanderleiamorimcorretor.com.br"
+        }
+    </script>
+    <title>Corretor de Imóveis em Lauro de Freitas e Salvador - Encontre a Casa dos Seus Sonhos!</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="canonical" href="https://vanderleiamorimcorretor.com.br">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <!-- style header -->
+    <header class="header">
+        <div class="header__opções">
+            <a href="index.html"><img src="assets/Outros-Assets/Logo Marca Dagua.png" alt="Logo Vanderlei Amorim Corretor de Imóveis"></a>
+            <a class="header__opções__contato" href="#form">Contato</a>
+                <!-- Style filter -->
+            <div class="header__opções__filtro">
+                <h2 class="header__opções__filtro-titulo">Filtro:</h2>
+                <div class="header__opções__filtro-div">
+                    <div class="header__opções__filtro-div-região">
+                        <select name="regiao" id="regiao">
+                            <option value="regiao">Região</option>
+                            <option value="lauro">Lauro de Freitas</option>
+                            <option value="salvador">Salvador</option>
+                        </select>
+                    </div>
+                    <div class="header__opções__filtro-div-finalidade">
+                        <select name="finalidade" id="finalidade">
+                            <option value="finalidade">Finalidade</option>
+                            <option value="comprar">Comprar</option>
+                            <option value="alugar">Alugar</option>
+                        </select>
+                    </div>
+                    <div class="header__opções__filtro-div-tipo">
+                        <select name="tipo" id="tipo">
+                            <option value="tipo">Tipo</option>
+                            <option value="apartamento">Apartamento</option>
+                            <option value="casa">Casa</option>
+                        </select>
+                    </div>
+                </div>
+                <button id="botao" class="header__opções__filtro-procurar">Procurar</button>
+            </div>
+            <div class="header__opções__casas">
+                <div id="piata" class="header__opções__casas-opção">
+                    <h2 class="header__opções__casas-opção-titulo">Morada de Piatã</h2>
+                    <p id="filter-text-animation" class="header__options__home-option-paragraph">Sua ótima localização abre portas a uma vida tranquila, localizado perto da orla...</p>
+                    <a href="moradaDePiata.html" class="header__opções__casas-opção-ancora">Saiba Mais...</a>
+                </div>
+                <div id="mar" class="header__opções__casas-opção">
+                    <h2 class="header__opções__casas-opção-titulo">Vista-Mar</h2>
+                    <p id="filter-text-animation" class="header__options__home-option-paragraph">Com uma área de lazer explêndida e conforto dentro de casa, este paraíso pode...</p>
+                    <a href="vistaMar.html" class="header__opções__casas-opção-ancora">Saiba Mais...</a>
+                </div>
+                <p id="nf" class="header__opções__casas-nf">Perdão, os filtros de pesquisa que selecionou não correspondem a nenhum apartamento ou casa disponível</p>
+            </div>
+        </div>
+        <!-- style filter's end -->
+    </header>
+    <!-- Fim do style header -->
+    <section class="moradaP">
+        <div class="moradaP__introdução">
+          <h1 class="moradaP__introdução-titulo">Morada de Piatã</h1>
+          <div class="moradaP__introdução-loc">
+            <div class="moradaP__introdução-loc-esquerda">
+              <h2 class="moradaP__introdução-loc-esquerda-titulo">Piatã - Salvador, BA</h2>
+              <div class="moradaP__introdução-loc-detalhes">
+                <p class="moradaP__introdução-loc-detalhes-fundo">Em construção</p>
+                <div class="moradaP__introdução-loc-detalhes-fundo-div">
+                  <p class="moradaP__introdução-loc-detalhes-fundo-quarto">2 Quartos</p>
+                  <img src="assets/Icons/icons8-cama-32.png" alt="Icone de cama">
+                </div>
+              </div>
+            </div>
+            <a class="moradaP__introdução-loc-ancora" href="https://wa.me/557192516350">Saiba o Preço</a>
+          </div>
+        </div>
+    <section class="moradaP__slides-cond-ap">
+        <div class="moradaP__slides">
+            <h2 class="moradaP__slides-titulo">Área do condomínio:</h2>
+            <div class="swiper swiper-moradaP">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/Morada-Piata/Guarita-Ctxt-MoradaP.jpg" alt="Guarita Morada de Piatã"></div>
+                    <div class="swiper-slide"><img src="assets/Morada-Piata/Churrasqueira-MoradaP.jpg" alt="Churrasqueira Morada de Piatã"></div>
+                    <div class="swiper-slide"><img src="assets/Morada-Piata/AreaFesta-MoradaP.jpg" alt="Salão de festas Morada de Piatã"></div>
+                    <div class="swiper-slide"><img src="assets/Morada-Piata/Futebol-MoradaP.jpg" alt="Campo de futebol Morada de Piatã"></div>
+                    <div class="swiper-slide"><img src="assets/Morada-Piata/Piscina-MoradaP.jpg" alt="Piscina Morada de Piatã"></div>
+                    <div class="swiper-slide"><img src="assets/Morada-Piata/Playground-PetPlace-MoradaP.jpg" alt="Playground e PetPlace Morada de Piatã"></div>
+                    <div class="swiper-slide"><img src="assets/Morada-Piata/Pomar-Bicicleta-MoradaP.jpg" alt="Pomar e Bicicletário Morada de Piatã"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+    
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+    
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+        <div class="moradaP__slides">
+            <h2 class="moradaP__slides-titulo">Apartamento:</h2>
+            <div class="swiper swiper-moradaP">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/Morada-Piata/Quarto-Sala-MoradaP.jpg" alt="Quarto e sala Morada de Piatã"></div>
+                    <div class="swiper-slide"><img src="assets/Morada-Piata/Varanda-MoradaP.jpg" alt="Varanda Morada de Piatã"></div>
+                    <div class="swiper-slide"><img src="assets/Morada-Piata/Cozinha-MoradaP.jpg" alt="Cozinha Morada de Piatã"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+    
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+    
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div> 
+    </section>
+    </section>
+    <section class="moradaP__plantas">
+        <h2 class="moradaP__slides-titulo-plantas">Plantas:</h2>
+        <div class="swiper swiper-moradaP-plantas">
+            <div class="swiper-wrapper button-next-ajuste">
+                <div class="swiper-slide"><img src="assets/Morada-Piata/Planta1-MoradaP.jpg" alt="Planta do apartamento Morada de Piatã"></div>
+                <div class="swiper-slide"><img src="assets/Morada-Piata/Planta2-MoradaP.jpg" alt="Planta do apartamento Morada de Piatã"></div>
+                <div class="swiper-slide"><img src="assets/Morada-Piata/Planta4-MoradaP.jpg" alt="Plantas Isometricas Morada de Piatã"></div>
+                <div class="swiper-slide"><img src="assets/Morada-Piata/Planta3-MoradaP.jpg" alt="Implantação Morada de Piatã"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+    
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+    
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </section>
+    <section class="moradaP__plantas">
+        <h2 class="moradaP__slides-titulo-plantas">Localização:</h2>
+        <div class="swiper swiper-moradaP-plantas button-next-ajuste">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/Morada-Piata/ComplexoP.jpg" alt="Complexo Morada de Piatã"></div>
+                <div class="swiper-slide"><img src="assets/Morada-Piata/Vista-da-rua-MoradaP.jpg" alt="Vista Aérea Morada de Piatã"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+    
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+    
+            <div class="swiper-scrollbar"></div>
+        </div>
+        <div class="moradaP__plantas-localização">
+            <p class="moradaP__plantas-localização-paragrafo">Seu apartamento em Salvador está no Morada de Piatã, o lar que você e sua família esperavam. Tenha tudo que você precisa próximo, supermercados, postos de combustível, escolas e praias.</p>
+        </div>
+    </section>
+    <section class="moradaP__final">
+        <a href="https://wa.me/557192516350" class="moradaP__final-titulo">Se interessou? Ou gostaria de saber mais detalhes?</a>
+        <a href="https://wa.me/557192516350" class="moradaP__final-botão">Fale comigo agora!</a>
+    </section>
+    <!-- Inicio do style footer -->
+    <footer>
+        <section class="footer">
+            <div id="form" class="form">
+                <h1 class="form__titulo">Fale Comigo:</h1>
+                <form class="form__preencher">
+                    <div class="form__preencher-div">
+                        <label for="nome">Nome:</label>
+                        <input class="input__form" type="text" name="nome" id="nome" placeholder="Digite seu nome completo" minlength="4" required>
+                    </div>
+                    <div class="form__preencher-div">
+                        <label for="email">Email:</label>
+                        <input class="input__form" type="email" name="email" id="email" placeholder="Digite seu email!" minlength="6" required>
+                    </div>
+                    <div class="form__preencher-div">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea class="input__form-mensagem" name="mensagem" id="mensagem" cols="40" rows="10" placeholder="Digite sua mensagem" maxlength="1000" required></textarea>
+                    </div>
+                    <button class="button-submit" type="submit">Enviar</button>
+                </form>
+            </div>
+            <div class="contatos">
+                <h1 class="contatos__titulo">Contatos:</h1>
+                <div class="contatos__whatsapp">
+                    <img src="../assets/Icons/icons8-whatsapp-64.png" alt="Simbolo Whatsapp">
+                    <a href="https://wa.me/557192516350" target="_blank" class="contatos__whatsapp__texto">Whatsapp</a>
+                </div>
+                <div class="contatos__instagram">
+                    <img src="../assets/Icons/icons8-instagram-64.png" alt="Simbolo Instagram">
+                    <a href="https://www.instagram.com/vanderleiamorimcorretor/" class="contatos__instagram__texto" target="_blank">Instagram</a>
+                </div>
+                <div class="contatos__telefone">
+                    <img src="../assets/Icons/icons8-telefone-64.png" alt="Simbolo de um telefone">
+                    <span class="contatos__telefone__texto" target="_blank">71 9251-6350</span>
+                </div>
+            </div>
+        </section>
+        <section class="footer__copyright">
+            <span class="footer__copyright__texto">₢ Vanderlei Amorim Corretor Imobiliário - Todos os direitos reservados.</span>
+        </section>
+    </footer>
+    <!-- Fim do style footer -->   
+    <!-- Script swiper -->
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 100,
+            slidesPerView: 1,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                dynamicBullets: true,
+                clickable: true,
+            },
+
+            scrollbar: {
+                enabled: false,
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            },
+
+            autoplay: {
+                delay: 8000,
+                pauseOnMouseEnter: true,
+            }
+        });
+    </script>
+    <!-- Fim do Script swiper -->
+    <script src="scripts/filterAnimations.js"></script>
+    <script src="scripts/filterFunctionality.js"></script>
+    <script src="scripts/main.js"></script>
+</body>

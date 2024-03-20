@@ -1,0 +1,177 @@
+body {
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-quinaria);
+    font-size: 32px;
+    font-weight: 500;
+    overflow-x: hidden;
+}
+
+.destaque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    margin: 10rem 0;
+}
+
+.destaque__titulo {
+    font-size: 36px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--cor-quaternaria);
+    border-bottom: 1px solid var(--cor-quaternaria);
+    font-family: var(--fonte-secundaria);
+    padding-bottom: 1rem;
+}
+
+.swiper {
+    width: 50%;
+    margin: 1rem 0;
+}
+
+.swiper-pagination {
+    margin-top: .5rem; 
+}
+
+.swiper-slide img {
+    width: 100%;
+    border-radius: 18px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: var(--cor-principal);
+}
+
+.destaque__apartamento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--cor-quaternaria);
+    width: 70%;
+    padding: 1rem .5rem;
+}   
+
+.destaque__apartamento-titulo {
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--cor-quaternaria);
+    text-transform: uppercase;
+}
+
+.destaque__apartamento-explicação {
+    font-size: 24px;
+    font-weight: 500;
+    width: 80%;
+    font-family: var(--fonte-terciaria);
+    text-align: center;
+}
+
+.destaque__apartamento-explicação > strong {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--cor-quaternaria);
+}
+
+.destaque__apartamento-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--cor-quaternaria);
+    border-bottom: 1px solid var(--cor-quaternaria);
+    transition: 1.4s;
+}
+
+.destaque__apartamento-link:hover {
+    font-size: 27px;
+    color: var(--cor-terciaria);
+    border-bottom: 1px solid var(--cor-terciaria);
+    transition: 1.4s;
+}
+
+.destaque__apartamento-ancora {
+    font-size: 22px;
+    font-weight: 500;
+    border: 1px solid var(--cor-quaternaria);
+    border-radius: 8rem;
+    background-color: var(--cor-quaternaria);
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--cor-principal);
+    padding: .8rem 3rem;
+    margin-top: 1rem;
+    transition: 1s;
+}
+
+.destaque__apartamento-ancora:hover {
+    font-size: 22px;
+    background-color: var(--cor-secundaria);
+    border: 1px solid var(--cor-quaternaria);
+    color: var(--cor-quinaria);
+    box-shadow: 3px 3px 0 black;
+    transition: 1s;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .destaque {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+        margin: 5rem 0;
+    }
+
+    .destaque__titulo {
+        font-size: 26px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: var(--cor-quaternaria);
+        border-bottom: 1px solid var(--cor-quaternaria);
+        padding-bottom: 1rem;
+        width: 80%;
+        text-align: center;
+    }
+
+    .swiper {
+        width: 90%;
+        margin: 1rem 0;
+    }
+    
+    .swiper-pagination {
+        margin-top: .5rem; 
+    }
+    
+    .swiper-slide img {
+        border-radius: 18px;
+    }
+    
+    .swiper-button-prev,
+    .swiper-button-next {
+        color: var(--cor-principal);
+    }
+    
+    .destaque__apartamento {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid var(--cor-quaternaria);
+        width: 80%;
+        padding: 1rem .5rem;
+    }   
+    
+    .destaque__apartamento-titulo {
+        font-size: 28px;
+        text-align: center;
+        font-weight: 600;
+        color: var(--cor-quaternaria);
+        text-transform: uppercase;
+    }
+    
+    .destaque__apartamento-explicação {
+        font-size: 20px;
+        font-weight: 500;
+        width: 90%;
+        font-family: var(--fonte-terciaria);
+        text-align: center;
+    }
+}

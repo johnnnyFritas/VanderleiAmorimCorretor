@@ -1,0 +1,36 @@
+:root {
+    --fonte-principal: 'Inter';
+    --fonte-secundaria: 'Poppins';
+    --fonte-terciaria: 'Montserrat';
+    --fonte-quaternaria: 'Helvetica Neue', sans-serif;
+
+    --cor-principal: white;
+    --cor-secundaria: #EAD7BB;
+    --cor-terciaria: #AE445A;
+    --cor-quaternaria: #e2b474;
+    --cor-quinaria: #113946;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.header > a > img {
+    width: 25%;
+}
+
+.button-submit > img {
+    animation: anima-loading 1s infinite linear;
+}
+
+@media screen and (max-width: 1024px) {
+
+    header {
+        overflow-x: hidden;
+    }
+
+    .header__opções > a > img {
+        width: 80%;
+    }
+}
